@@ -1,0 +1,23 @@
+{
+  "name": "minebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc-watch --onSuccess \"npm run start:launch\"",
+    "start": "run-s build start:launch",
+    "start:launch": "node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "minecraft-data": "^3.40.0",
+    "mineflayer": "^4.10.1"
+  }
+}
